@@ -1,0 +1,38 @@
+問１.Switch3
+
+問２.Switch1と2の間のショートパスコストは19
+　　 Switch1と3の間のショートパスコストは100
+        Switch2と4の間のショートパスコストは100
+        Switch3と4の間のショートパスコストは100
+　
+Switch1からSwitch3までのルートは2つ
+①Switch1からSwitch3 : 100
+②Switch1からSwitch2からSwitch4からSwitch3 : 19+100+100=219　なので
+Switch1のRPは　F0／2
+
+Switch2からSwitch3までのルートは2つ
+①Switch2からSwitch1からSwitch3 : 19+100=119
+②Switch2からSwitch4からSwitch3 : 100+100=200　なので
+Switch2のRPは　F0／2
+
+Switch4からSwitch3までのルートは2つ
+①Switch4からSwitch3 : 100
+②Switch4からSwitch2からSwitch1からSwitch3 : 100+19+100=219　なので
+Switch4のRPは　E0／2
+
+ルートブリッジのポートは全てDPになるので
+Switch3のE0/1とE0/2がDPになる
+
+ルートポートの向かいはDPになるので
+Switch1のF0/1
+Switch2と4の間には役割がないのでブリッジIDの小さい
+Switch4のE0/1
+この二つをDPにする
+
+RP・DPに該当しなかった
+F0/2 をBPとする
+
+
+
+
+
