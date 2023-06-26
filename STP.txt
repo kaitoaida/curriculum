@@ -13,7 +13,7 @@ Switch1のRPは　F0／2
 Switch2からSwitch3までのルートは2つ
 ①Switch2からSwitch1からSwitch3 : 19+100=119
 ②Switch2からSwitch4からSwitch3 : 100+100=200　なので
-Switch2のRPは　F0／2
+Switch2のRPは　F0／1
 
 Switch4からSwitch3までのルートは2つ
 ①Switch4からSwitch3 : 100
